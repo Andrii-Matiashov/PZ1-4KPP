@@ -12,7 +12,7 @@ public class Task {
         arr[3]=new Lesson("Programming JavaScript",50,
                 "Ivanov","Sergey","Alexeevich","testExample@nure.ua","+380956764444",
                 "2023-01-01 15:30:00","2023-01-01 17:00:00");
-        System.out.println();
+        System.out.println("Beginning array of Discipline: ");
         for(Discipline elem : arr){
             System.out.println(elem);
         }
