@@ -47,6 +47,6 @@ public class Discipline implements Comparable<Discipline> {
 
     @Override
     public int compareTo(Discipline o) {
-        return hourPerSemester-o.hourPerSemester;
+        return o.hourPerSemester -  hourPerSemester;
     }
 }
