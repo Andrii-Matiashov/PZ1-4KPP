@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class SecondTask {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Enter N: ");
             int n = scanner.nextInt();
             int[][] arr = createArray(n);
             printMatrix(arr);

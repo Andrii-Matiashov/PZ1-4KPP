@@ -2,7 +2,7 @@ package org.example.pz2;
 
 import java.util.Objects;
 
-public class Discipline {
+public class Discipline implements Comparable<Discipline> {
     private String disciplineName;
     private int hourPerSemester;
 
@@ -43,5 +43,10 @@ public class Discipline {
         if (this == o) return true;
         if (!(o instanceof Discipline that)) return false;
         return getHourPerSemester() == that.getHourPerSemester() && Objects.equals(getDisciplineName(), that.getDisciplineName());
+    }
+
+    @Override
+    public int compareTo(Discipline o) {
+        return hourPerSemester-o.hourPerSemester;
     }
 }
